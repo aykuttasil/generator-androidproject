@@ -1,13 +1,9 @@
 {
   "name": "generator-androidproject",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Android Scaffolding",
   "homepage": "http://aykuttasil.github.com/YoAndroidProject",
-  "author": {
-    "name": "Aykut Asil",
-    "email": "aykuttasil@gmail.com",
-    "url": "www.aykutasil.com"
-  },
+  "author": "Aykut Asil <aykuttasil@gmail.com> (www.aykutasil.com)",
   "files": [
     "generators"
   ],
@@ -61,10 +57,19 @@
       "mocha": true
     }
   },
-  "repository": "aykuttasil/generator-androidproject",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aykuttasil/generator-androidproject.git"
+  },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aykuttasil/generator-androidproject/issues"
+  },
+  "directories": {
+    "test": "test"
+  }
 }

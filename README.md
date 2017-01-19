@@ -29,7 +29,7 @@ Apache-2.0 © [Aykut Asil](www.aykutasil.com)
 
 
 [npm-image]: https://badge.fury.io/js/generator-androidproject.svg
-[npm-url]: https://npmjs.org/package/generator-androidproject
+[npm-url]: https://www.npmjs.com/package/generator-androidproject
 [travis-image]: https://travis-ci.org/aykuttasil/generator-androidproject.svg?branch=master
 [travis-url]: https://travis-ci.org/aykuttasil/generator-androidproject
 [daviddm-image]: https://david-dm.org/aykuttasil/generator-androidproject.svg?theme=shields.io
