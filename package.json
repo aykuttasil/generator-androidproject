@@ -2,7 +2,7 @@
   "name": "generator-androidproject",
   "version": "0.0.1",
   "description": "Android Scaffolding",
-  "homepage": "http://aykuttasil.github.com/YoAndroidProject",
+  "homepage": "https://github.com/aykuttasil/generator-androidproject",
   "author": "Aykut Asil <aykuttasil@gmail.com> (www.aykutasil.com)",
   "files": [
     "generators"
