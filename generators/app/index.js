@@ -122,7 +122,6 @@ module.exports = class extends MyYeoman {
     this.fs.copy(this.sourceRoot() + '/gradlew', 'gradlew');
     this.fs.copy(this.sourceRoot() + '/gradlew.bat', 'gradlew.bat');
     this.fs.copy(this.sourceRoot() + '/settings.gradle', 'settings.gradle');
-    this.fs.copy(this.sourceRoot() + '/app/.gitignore', 'app/.gitignore');
     this.fs.copy(this.sourceRoot() + '/app/proguard-rules.pro', 'app/proguard-rules.pro');
     this.fs.copy(this.sourceRoot() + '/app/google-services.json', 'app/google-services.json');
 
