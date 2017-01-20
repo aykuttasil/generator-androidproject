@@ -18,18 +18,18 @@ public class AppProject extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        initMenuList();
+        init<%= projectName %>();
     }
 
     @DebugLog
-    private void initMenuList() {
+    private void init<%= projectName %>() {
 
         FirebaseApp.initializeApp(this);
 
         // FIXME: 27.11.2016 Production a geçince Log seviyesini NULL yap
         Logger.init("<%= projectName %>Logger")
                 .methodCount(3)
-                .logLevel(BuildConfig.DEBUG ? LogLevel.FULL : LogLevel.FULL)        // default LogLevel.FULL
+                .logLevel(BuildConfig.DEBUG ? LogLevel.FULL : LogLevel.NONE)        // default LogLevel.FULL
                 .methodOffset(0);
 
 
