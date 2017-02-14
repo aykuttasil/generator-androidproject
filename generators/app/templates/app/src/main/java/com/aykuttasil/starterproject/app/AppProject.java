@@ -32,6 +32,7 @@ public class AppProject extends Application {
                 .logLevel(BuildConfig.DEBUG ? LogLevel.FULL : LogLevel.NONE)        // default LogLevel.FULL
                 .methodOffset(0);
 
+        Utils.init(this);        
 
     }
 
