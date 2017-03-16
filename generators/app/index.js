@@ -67,13 +67,13 @@ module.exports = class extends MyYeoman {
       type: 'input',
       name: 'playVersion',
       message: 'Play Version: ',
-      default: '10.0.1',
+      default: '10.2.0',
       store: true
     }, {
       type: 'input',
       name: 'supportVersion',
       message: 'Support Version',
-      default: '25.1.0',
+      default: '25.3.0',
       store: true
     }, {
       type: 'input',
@@ -91,7 +91,7 @@ module.exports = class extends MyYeoman {
       type: 'input',
       name: 'buildVersion',
       message: 'Build Version',
-      default: '25.0.1',
+      default: '25.0.2',
       store: true
     }];
 
@@ -128,12 +128,14 @@ module.exports = class extends MyYeoman {
     this.fs.copyTpl(this.sourceRoot() + '/build.gradle', 'build.gradle', this.props);
     this.fs.copyTpl(this.sourceRoot() + '/app/build.gradle', 'app/build.gradle', this.props);
     this.fs.copyTpl(this.sourceRoot() + '/app/src/main/java/com/aykuttasil/starterproject', 'app/src/main/java/' + packageDir, this.props);
+    // this.fs.copyTpl(this.sourceRoot() + '/app/src/main/java/com/aykuttasil/starterproject/app/AppProject.java', 'app/src/main/java/' + packageDir + '/app/' + this.props.projectName + 'Project.java', this.props);
     this.fs.copyTpl(this.sourceRoot() + '/app/src/main/AndroidManifest.xml', 'app/src/main/AndroidManifest.xml', this.props);
     this.fs.copyTpl(this.sourceRoot() + '/app/src/main/res/values', 'app/src/main/res/values', this.props);
     this.fs.copyTpl(this.sourceRoot() + '/app/src/debug/AndroidManifest.xml', 'app/src/debug/AndroidManifest.xml', this.props);
     this.fs.copyTpl(this.sourceRoot() + '/app/src/debug/java/com/aykuttasil/starterproject/app', 'app/src/debug/java/' + packageDir + '/app', this.props);
     this.fs.copyTpl(this.sourceRoot() + '/app/src/androidTest/java/com/aykuttasil/starterproject', 'app/src/androidTest/java/' + packageDir, this.props);
     this.fs.copyTpl(this.sourceRoot() + '/app/src/test/java/com/aykuttasil/starterproject', 'app/src/test/java/' + packageDir, this.props);
+    // console.log(this.sourceRoot() + '/app/src/main/java/' + packageDir + '/app/AppProject.java');
   }
 
   install() {
