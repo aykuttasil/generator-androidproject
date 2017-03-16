@@ -6,6 +6,7 @@ import <%= packageName %>.BuildConfig;
 import com.google.firebase.FirebaseApp;
 import com.orhanobut.logger.LogLevel;
 import com.orhanobut.logger.Logger;
+import com.blankj.utilcode.utils.Utils;
 
 import hugo.weaving.DebugLog;
 
