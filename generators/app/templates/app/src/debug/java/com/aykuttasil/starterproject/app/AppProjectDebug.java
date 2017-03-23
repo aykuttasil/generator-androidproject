@@ -7,7 +7,7 @@ import com.facebook.stetho.Stetho;
  */
 
 
-public class AppProjectDebug extends AppProject {
+public class AppProjectDebug extends App {
 
     @Override
     public void onCreate() {
